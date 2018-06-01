@@ -1,12 +1,12 @@
 import scrapy
 import urllib
-from amazon.items import AmazonItem
+from Scrapy_To_Scrape_Amazon.items import AmazonItem
 import os
 
 
 class amazonSpider(scrapy.Spider):
     imgcount = 1
-    name = "amazon"
+    name = "scrapy crawl Scrapy_To_Scrape_Amazon"
     allowed_domains = ["amazon.com"]
     '''
     start_urls = ["http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=backpack",
