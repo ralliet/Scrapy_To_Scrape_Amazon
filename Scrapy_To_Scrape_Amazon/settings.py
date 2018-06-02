@@ -10,13 +10,13 @@ from scrapy.settings.default_settings import ITEM_PIPELINES
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'amazon'
+BOT_NAME = 'Scrapy_To_Scrape_Amazon'
 
-SPIDER_MODULES = ['amazon.spiders']
-NEWSPIDER_MODULE = 'amazon.spiders'
+SPIDER_MODULES = ['Scrapy_To_Scrape_Amazon.spiders']
+NEWSPIDER_MODULE = 'Scrapy_To_Scrape_Amazon.spiders'
 
 ITEM_PIPELINES = {
-    'amazon.pipelines.AmazonPipeline': 0
+    'Scrapy_To_Scrape_Amazon.pipelines.AmazonPipeline': 0
     }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
