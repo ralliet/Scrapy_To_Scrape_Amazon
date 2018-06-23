@@ -25,9 +25,10 @@ class amazonSpider(scrapy.Spider):
         #namelist = response.xpath('//a[@class="a-link-normal s-access-detail-page  a-text-normal"]/@title').extract()
         #htmllist = response.xpath('//a[@class="a-link-normal s-access-detail-page  a-text-normal"]/@href').extract()
         #imglist = response.xpath('//a[@class="a-link-normal a-text-normal"]/img/@src').extract()
-        namelist = response.xpath('//a[@class="a-link-normal s-access-detail-page s-overflow-ellipsis a-text-normal"]/@title').extract()
-        htmllist = response.xpath('//a[@class="a-link-normal s-access-detail-page s-overflow-ellipsis a-text-normal"]/@href').extract()
+        namelist = response.xpath('//img[@class="s-access-image cfMarker"]/@alt').extract()
+        htmllist = response.xpath('//img[@class="s-access-image cfMarker"]/@alt').extract()
         imglist = response.xpath('//img[@class="s-access-image cfMarker"]/@src').extract()
+
         listlength = len(namelist)
         
         pwd = os.getcwd()+'/'
